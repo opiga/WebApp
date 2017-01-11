@@ -37,7 +37,7 @@ public class DAO {
 //fgdkgldkgldkf
     protected int executeUpdate(String sql) {
         int result = -1;
-        int c;
+        int c=0;
 
         try (Connection connection = ConnectionCreator.getConnection();
              Statement statement   = connection.createStatement()
