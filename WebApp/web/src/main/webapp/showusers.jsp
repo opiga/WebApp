@@ -9,15 +9,15 @@
 1. Скачать библиотеку http://central.maven.org/maven2/javax/servlet/jstl/1.2/jstl-1.2.jar
 2. Положить ее в папку lib.local вашего проекта (она потом копируется через ant в WEB-INF)
 3. Объявить применение тегов JSTL указав в заголовке
-   <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-4. После этого становятся доступными конструкции вида
-    <с:out value="текст" />                                 НЕ КОПИРУЙТЕ ЭТОТ КОД
-    <с:forEach var="yourItem" items="yourListItems">        НЕ КОПИРУЙТЕ ЭТОТ КОД
-          ${yourItem}<br> или ${yourItem.свойство}<br>      НЕ КОПИРУЙТЕ ЭТОТ КОД
-    <с:forEach>                                             НЕ КОПИРУЙТЕ ЭТОТ КОД
-(НЕ КОПИРУЙТЕ КОД ВЫШЕ, ТУТ <с:out - записано русскими буквами
-так сделано специально, чтобы не было замены при старте jsp)
-а код ниже можно использовать, он рабочий)
+   <%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>--%>
+<%--4. После этого становятся доступными конструкции вида--%>
+    <%--<с:out value="текст" />                                 НЕ КОПИРУЙТЕ ЭТОТ КОД--%>
+    <%--<с:forEach var="yourItem" items="yourListItems">        НЕ КОПИРУЙТЕ ЭТОТ КОД--%>
+          <%--${yourItem}<br> или ${yourItem.свойство}<br>      НЕ КОПИРУЙТЕ ЭТОТ КОД--%>
+    <%--<с:forEach>                                             НЕ КОПИРУЙТЕ ЭТОТ КОД--%>
+<%--(НЕ КОПИРУЙТЕ КОД ВЫШЕ, ТУТ <с:out - записано русскими буквами--%>
+<%--так сделано специально, чтобы не было замены при старте jsp)--%>
+<%--а код ниже можно использовать, он рабочий)--%>
 =========================================================================================
 -->
 
@@ -42,15 +42,15 @@
                 value="${user.ID}" class="form-control input-md">
             </div>
             <div class=col-md-2>
-                <input id="textinput" name="Login" type="text"
+                <input id="textinput1" name="Login" type="text"
                 value="${user.login}" class="form-control input-md">
             </div>
             <div class=col-md-2>
-                <input id="textinput" name="Password" type="text"
+                <input id="textinput2" name="Password" type="text"
                 value="${user.pass}" class="form-control input-md">
             </div>
             <div class=col-md-2>
-                <input id="textinput" name="Email" type="text"
+                <input id="textinput3" name="Email" type="text"
                 value="${user.email}" class="form-control input-md">
             </div>
 
@@ -65,13 +65,13 @@
             </div>
 
             <div class=col-md-1>
-                <button id="singlebutton" name="singlebutton" class="btn btn-success">
+                <button id="singlebutton1" name="singlebutton" class="btn btn-success">
                     Обновить
                 </button>
             </div>
 
             <div class=col-md-1>
-                <button id="singlebutton" name="singlebutton"
+                <button id="singlebutton2" name="singlebutton"
                 class="btn btn-danger"
                 onclick="document.getElementById('user_ID_${user.ID}').value=-document.getElementById('user_ID_${user.ID}').value;"
                 >

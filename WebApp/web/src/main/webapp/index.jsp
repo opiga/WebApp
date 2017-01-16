@@ -1,6 +1,7 @@
 <%@ page language="java" pageEncoding="UTF-8" %>
 <%@ include file="include/begin-html.jsp" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%--<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>--%>
 
       <!-- Основное содержимое -->
       <div class="page-header">
@@ -30,35 +31,29 @@
         <!-- Коллекцию listUser мы получаем по get из команды сервлета UserForm -->
         <c:forEach items="${orders}" var="order">
              <div class="row">
-           <%--  <form class="form-order-${order.ID}" action="do?command=Index" method=POST>
                  <div class=col-md-1>
-                     <input id="order_ID_${order.ID}" name="ID" type="text"
-                     value="${order.ID}" class="form-control input-md">
-                 </div>
-                   --%>
-                 <div class=col-md-1>
-                     <input id="textinput" name="fio" type="text"
+                     <input id="textinput1" name="fio" type="text"
                      value="${order.fio}" class="form-control input-md">
                  </div>
                  <div class=col-md-2>
-                     <input id="textinput" name="passport" type="text"
+                     <input id="textinput2" name="passport" type="text"
                      value="${order.passport}" class="form-control input-md">
                  </div>
                  <div class=col-md-2>
-                     <input id="textinput" name="phone" type="text"
+                     <input id="textinput3" name="phone" type="text"
                      value="${order.phone}" class="form-control input-md">
                  </div>
                  <div class=col-md-1>
-                     <input id="textinput" name="category" type="text"
+                     <input id="textinput4" name="category" type="text"
                      value="${order.category}" class="form-control input-md">
                  </div>
 
                 <div class=col-md-2>
-                     <input id="textinput" name="arrive" type="text"
+                     <input id="textinput5" name="arrive" type="text"
                      value="${order.arriveString}" class="form-control input-md">
                  </div>
                  <div class=col-md-2>
-                     <input id="textinput" name="leave" type="text"
+                     <input id="textinput6" name="leave" type="text"
                      value="${order.leaveString}" class="form-control input-md">
                  </div>
 

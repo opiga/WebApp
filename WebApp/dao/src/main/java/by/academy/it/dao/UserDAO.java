@@ -32,12 +32,12 @@ public class UserDAO extends DAO implements InterfaceDAO<User> {
     }
 
     @Override
-    public boolean update(User user) {
-        String sql=String.format("UPDATE t02_user " +
-                        "SET login='%s', pass='%s', email='%s',FK_role='%d'" +
-                        " WHERE ID='%d';",
-                user.getLogin(),user.getPass(),user.getEmail(),user.getFK_role(),user.getID());
-        return (0<executeUpdate(sql));
+        public boolean update(User user) {
+            String sql=String.format("UPDATE t02_user " +
+                            "SET login='%s', pass='%s', email='%s',FK_role='%d'" +
+                            " WHERE ID='%d';",
+                    user.getLogin(),user.getPass(),user.getEmail(),user.getFK_role(),user.getID());
+            return (0<executeUpdate(sql));
     }
 
     @Override

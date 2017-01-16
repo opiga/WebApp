@@ -34,7 +34,6 @@ public class DAO {
         return dao;
     }
 
-//fgdkgldkgldkf
     protected int executeUpdate(String sql) {
         int result = -1;
         int c=0;

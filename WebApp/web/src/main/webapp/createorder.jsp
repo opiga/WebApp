@@ -61,14 +61,6 @@
 
                     </div>
                 </div>
-             <!-- Text input-->
-              <!--  <div class="form-group">
-                    <label class="col-md-4 control-label" for="payment">Оплата</label>
-                    <div class="col-md-4">
-                        <input id="payment" name="payment" type="text" placeholder="" class="form-control input-md" required="">
-
-                    </div>
-                </div>-->
                  <!-- Select Basic -->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="payment">Оплата</label>
